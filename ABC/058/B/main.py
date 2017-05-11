@@ -1,15 +1,12 @@
 # coding: utf-8
 
-O = raw_input()
-E = raw_input()
-
-if len(O) > len(E):
-    E += " "
-
+o = raw_input()
+e = raw_input()
 passwd = ""
 
-for o, e in zip(O, E):
-    passwd += o + e
+for i in range(0, len(o)):
+    passwd += o[i]
+    if i < len(e):
+        passwd += e[i]
 
-passwd = passwd.replace(" ", "")
 print passwd
