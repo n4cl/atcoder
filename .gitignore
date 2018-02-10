@@ -1,2 +1,7 @@
 # cpp
-*.out
+a.out
+
+# IntelliJ IDEA
+.idea/
+CMakeLists.txt
+cmake-build-debug
